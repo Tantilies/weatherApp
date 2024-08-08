@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.weather__container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #0eb7e644;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather__box {
+  background-color: #fff;
+  border-radius: 25px;
+  width: 600px;
+  min-height: 100px;
+  padding: 15px 10px;
+  box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+
+.weather__search {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.weather__search-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather__search-input {
+  width: 450px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+._icon-location {
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding: 0 5px 5px 0;
+  color: red;
+  font-size: 18px;
+}
+
+.weather__search-button {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 30px;
+  padding-right: 0;
+}
+
+._icon-search {
+  font-size: 20px;
+}
+
+.weather__info {
+  display: none;
+}
+
+.city__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.weatcher__info-city {
+  font-size: 28px;
+  text-align: center;
+}
+
+.weather__info-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  margin-bottom: 15px;
+}
+
+.weather__info-item {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.item__wind-direction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item__wind {
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+}
+
+.item__wind-text {
+  margin-left: 5px;
+}
+
+.item__wind-arrow {
+  width: 12px;
+  height: 12px;
+}
+
+.item__wrapper {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info__icon {
+  font-size: 24px;
+  padding-right: 7px;
+}
+
+._icon-temperature {
+  padding: 0;
+}
+
+.weather__syntax-error {
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  display: none;
+}
+
+.weather__error-title {
+  color: red;
+  font-size: 20px;
+}
+
+.weather__fetch-error {
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  display: none;
+}
+
+.fetch__error-title {
+  color: red;
+  font-size: 20px;
+}

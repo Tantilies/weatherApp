@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./icon.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="weather__container">
+    <div class="weather__box">
+      <div class="weather__search">
+        <div class="weather__search-wrapper">
+          <i class="_icon-location"></i>
+          <input id="searchCity" class="weather__search-input" type="text" placeholder="Введите город">
+          <button id="searchButton" class="weather__search-button">
+            <i class="_icon-search"></i>
+          </button>
+        </div>
+        <div class="weather__info">
+          <div class="city__wrapper">
+            <h2 id="city" class="weatcher__info-city"></h2>
+            <img class="icon__weather-city" src="" alt="weather-icon"></img>
+          </div>
+          <div class="weather__info-list">
+            <div class="weather__info-item">
+              <i class="info__icon  _icon-temperature"></i>
+              <h3 id="temperature" class="info__item-text"></h3>
+            </div>
+            <div class="weather__info-item item__wind">
+              <div class="item__wrapper">
+                <i class="info__icon  _icon-wind"></i>
+                <h3 id="wind" class="info__item-text"></h3>
+              </div>
+              <div class="item__wind-direction">
+                <img class="item__wind-arrow" src="./icons/arrow.png" alt="wind-arrow">
+                <p class="item__wind-text"></p>
+              </div>
+            </div>
+            <div class="weather__info-item">
+              <i class="info__icon _icon-humidity"></i>
+              <h3 id="humidity" class="info__item-text"></h3>
+            </div>
+          </div>
+        </div>
+        <div class="weather__syntax-error">
+          <h2 class="weather__error-title">Такого города не существует</h2>
+        </div>
+        <div class="weather__fetch-error">
+          <h2 class="fetch__error-title"></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./weather.js"></script>
+</body>
+
+</html>
